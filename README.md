@@ -26,7 +26,7 @@ DISCLAIMER: Yo, I'm not responsible if you destroy some shit by accident. Have f
 
 ## 🔌 Topology (at a glance)
 
-```mermaid
+```bash
 flowchart LR
   subgraph Host["Host (optional)"]
     A[Rules Engine<br/>Python] -->|set_kill(True/False)| T

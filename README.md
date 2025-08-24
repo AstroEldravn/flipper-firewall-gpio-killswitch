@@ -8,6 +8,8 @@
 A **hardware‑first**, **firmware‑agnostic** killswitch you can toggle from *anything* that outputs **3.3 V HIGH** — works great with **Flipper Zero** no matter which firmware you run.  
 Use it to cut **power**, **USB data**, or an **Ethernet pair** in panic or policy‑driven scenarios.
 
+DISCLAIMER: Yo, I'm not responsible if you destroy some shit by accident. Have fun and be careful. Test this on equipment that's deprecated or no longer useful. Not to be used maliciously.
+
 > TL;DR — Wire 3V3/GND/SIG to our little board. Flip a GPIO (from Flipper, reed switch, USB‑UART, or Raspberry Pi) and the target link dies.
 
 ---

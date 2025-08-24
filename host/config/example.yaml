@@ -1,0 +1,27 @@
+transport:
+  type: dryrun         # uart_serial | gpio_local | dryrun
+  device: auto         # used by uart_serial
+  line: rts            # rts | dtr (uart_serial)
+  invert_logic: false
+
+policy:
+  default_kill_state: false
+  debounce_ms: 100
+  triggers:
+    - name: panic_file
+      type: file_exists
+      path: /tmp/KILL_NOW
+      action: kill_on
+    - name: clear_after_10s
+      type: timer
+      seconds: 10
+      action: kill_off
+    - name: blocklist_probe
+      type: http_probe
+      url: https://example.com/
+      expect_status: 200
+      action: kill_on
+
+alerts:
+  - type: log_only
+  - type: desktop_notify

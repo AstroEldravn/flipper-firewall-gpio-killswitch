@@ -1,0 +1,8 @@
+policy:
+  default_kill_state: false
+  triggers:
+    - name: usb_mass_storage_seen
+      type: log_regex
+      path: /var/log/kern.log
+      regex: "usb .* Mass Storage"
+      action: kill_on

@@ -1,0 +1,8 @@
+Item,Qty,Part,Notes
+Q1,1,AO3400A,N-MOSFET low-side
+Q2,1,MMBT3904,NPN driver
+D1,1,SS14,Flyback diode (relay variant)
+R1,1,10k,Pulldown
+R2,1,1k,Base resistor
+J1,1,3-pin header,3V3/GND/SIG
+K1,1,DPDT relay,USB data cut variant

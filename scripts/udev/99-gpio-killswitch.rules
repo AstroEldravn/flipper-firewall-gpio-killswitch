@@ -1,0 +1,4 @@
+# Grant plugdev/dialout access to common USB-serial adapters (adjust groups as needed)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", MODE="0660", GROUP="dialout"   # CH340
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", MODE="0660", GROUP="dialout"   # FTDI
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", MODE="0660", GROUP="dialout"   # CP210x

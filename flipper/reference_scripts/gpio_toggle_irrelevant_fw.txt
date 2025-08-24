@@ -1,0 +1,2 @@
+This project does not need firmware-specific code.
+On Flipper, select a GPIO pin and set it HIGH to assert the kill.

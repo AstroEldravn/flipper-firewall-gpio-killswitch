@@ -114,20 +114,6 @@ See complete schema in [`docs/api/killswitch_api.md`](docs/api/killswitch_api.md
 
 ---
 
-## 📦 Repo layout
-
-```
-flipper-firewall-gpio-killswitch/
-├─ hardware/         # circuits & BOM
-├─ host/             # Python rules engine + transports
-├─ flipper/          # optional helpers
-├─ docs/             # wiring & threat model
-├─ targets/          # ready-to-build examples
-└─ tests/            # pytest suite
-```
-
----
-
 ## 🧯 Safety
 
 - Use flyback diodes with inductive loads (relays).
